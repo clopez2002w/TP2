@@ -1,20 +1,19 @@
 package Materials;
 
-import PropiedadesMateriales.Durability;
+import org.junit.Assert;
+import org.junit.Test;
 
-public class Wood {
+import static org.junit.Assert.*;
 
-    private static final int WOODDURABILITY = 10;
-
-    private
-
-        Durability durability;
+public class WoodTest {
 
 //-------------------------------------------------------------------
 
-    public Wood ()
-    {
-        this.durability = new Durability(WOODDURABILITY);
+    @Test
+    public void test01WoodInstanceCreated () {
+
+        Wood wood = new Wood();
+        Assert.assertNotNull(wood);
     }
 
 //-------------------------------------------------------------------
