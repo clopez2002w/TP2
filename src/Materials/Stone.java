@@ -2,19 +2,16 @@ package Materials;
 
 import PropiedadesMateriales.Durability;
 
-public class Wood extends Materials{
+public class Stone extends Materials {
 
-    private static final int WOODDURABILITY = 10;
-
+    private static final int STONEDURABILITY = 30;
 
 //-------------------------------------------------------------------
 
-    public Wood ()
+    public Stone ()
     {
-        this.durability = new Durability(WOODDURABILITY);
+        this.durability = new Durability(STONEDURABILITY);
     }
-
-//-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
 

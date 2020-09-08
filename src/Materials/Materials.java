@@ -2,17 +2,11 @@ package Materials;
 
 import PropiedadesMateriales.Durability;
 
-public class Wood extends Materials{
+public abstract class Materials {
 
-    private static final int WOODDURABILITY = 10;
+    protected
 
-
-//-------------------------------------------------------------------
-
-    public Wood ()
-    {
-        this.durability = new Durability(WOODDURABILITY);
-    }
+        Durability durability;
 
 //-------------------------------------------------------------------
 

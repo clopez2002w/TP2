@@ -1,17 +1,19 @@
 package Materials;
 
-import PropiedadesMateriales.Durability;
+import org.junit.Assert;
+import org.junit.Test;
 
-public class Wood extends Materials{
+import static org.junit.Assert.*;
 
-    private static final int WOODDURABILITY = 10;
-
+public class StoneTest {
 
 //-------------------------------------------------------------------
 
-    public Wood ()
-    {
-        this.durability = new Durability(WOODDURABILITY);
+    @Test
+    public void test01StoneInstanceCreated () {
+
+        Stone stone = new Stone();
+        Assert.assertNotNull(stone);
     }
 
 //-------------------------------------------------------------------
@@ -24,6 +26,6 @@ public class Wood extends Materials{
 
 //-------------------------------------------------------------------
 
-//-------------------------------------------------------------------
+
 
 }
