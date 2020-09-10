@@ -1,17 +1,17 @@
-package Tools;
+package PropiedadesMateriales;
 
-import PropiedadesMateriales.Durability;
-import PropiedadesMateriales.Force;
-import javafx.scene.paint.Material;
+public class Force {
 
-public abstract class Tool {
+    private
 
-    protected
+        int force;
 
-        Material material;
-        Durability durability;
-        Force force;
+//-------------------------------------------------------------------
 
+    public Force (int force)
+    {
+        this.force = force;
+    }
 
 //-------------------------------------------------------------------
 
@@ -23,7 +23,8 @@ public abstract class Tool {
 
 //-------------------------------------------------------------------
 
+//-------------------------------------------------------------------
 
-
+//-------------------------------------------------------------------
 
 }
