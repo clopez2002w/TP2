@@ -18,6 +18,13 @@ public class DurabilityTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test02GetDurability () {
+
+        Durability durability = new Durability(100);
+        Assert.assertEquals(100,durability.getDurability());
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
