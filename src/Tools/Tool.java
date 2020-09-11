@@ -10,14 +10,12 @@ public abstract class Tool {
     protected
 
         Material material;
+        Durability durability;
+        Force force;
         Wear wear;                  // Desgaste
 
 
 //-------------------------------------------------------------------
-
-
-
-
 
 //-------------------------------------------------------------------
 
