@@ -1,5 +1,6 @@
 package Tools;
 
+import Factory.Factory;
 import Materials.Wood;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
@@ -23,11 +24,46 @@ public class PeakTest {
 
 //-------------------------------------------------------------------
 
-//-------------------------------------------------------------------
+    @Test
+    public void test02TheMaterialOfThePeakIsWood () {
+
+        Factory factory = new Factory();
+        Peak peak = factory.makePeakOfWood();
+        Assert.assertNotNull(peak.giveMeMateirial());
+    }
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test03TheDurabilityOfAPeakOfWoodIs100 () {
+
+        Factory factory = new Factory();
+        Peak peak = factory.makePeakOfWood();
+        Assert.assertEquals(100,peak.giveMeDurability());
+    }
+
+
 //-------------------------------------------------------------------
+
+    @Test
+    public void test04TheForceOfAPeakOfWoodIs2 () {
+
+        Factory factory = new Factory();
+        Peak peak = factory.makePeakOfWood();
+        Assert.assertEquals(2,peak.giveMeForce());
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test05PeakOfWoodApplyWearSoDurabilityChangeFrom100To98 () {
+
+        Factory factory = new Factory();
+        Peak peak = factory.makePeakOfWood();
+        peak.applyWear();
+        Assert.assertEquals(98,peak.giveMeDurability());
+
+    }
 
 //-------------------------------------------------------------------
 
