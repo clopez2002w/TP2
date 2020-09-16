@@ -6,6 +6,7 @@ import Materials.Wood;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
 import Tools.Axe;
+import Tools.Peak;
 import Tools.Tool;
 import Wear.WearDecreasesDividedByFactor;
 import Wear.WearDecreasesLinearly;
@@ -21,6 +22,9 @@ public class Factory {
     private static final int AxeOfMetalDurability = 400;
     private static final int AxeOfMetalForce = 10;
     private static final int AxeOfMetalFactor = 2;
+
+    private static final int PeakOfWoodDurability = 100;
+    private static final int PeakOfWoodForce = 2;
 
 
 //-------------------------------------------------------------------
@@ -45,6 +49,15 @@ public class Factory {
     }
 
 //-------------------------------------------------------------------
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+
+    public Peak makePeakOfWood ()
+    {
+        return new Peak(new Wood(), new Durability(PeakOfWoodDurability), new Force(PeakOfWoodForce), new WearDecreasesLinearly());
+    }
+
+
 
 //-------------------------------------------------------------------
 

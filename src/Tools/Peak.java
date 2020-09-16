@@ -1,8 +1,18 @@
 package Tools;
 
-public class Peak{
+import Materials.Materials;
+import PropiedadesMateriales.Durability;
+import PropiedadesMateriales.Force;
+import PropiedadesMateriales.Wear;
+
+public class Peak extends Tool{
 
 //-------------------------------------------------------------------
+
+    public Peak (Materials materials, Durability durability, Force force, Wear wear)
+    {
+        super(materials, durability, force, wear);
+    }
 
 //-------------------------------------------------------------------
 

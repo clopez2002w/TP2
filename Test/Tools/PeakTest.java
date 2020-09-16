@@ -1,39 +1,29 @@
-package PropiedadesMateriales;
+package Tools;
 
+import Materials.Wood;
+import PropiedadesMateriales.Durability;
+import PropiedadesMateriales.Force;
+import Wear.WearDecreasesLinearly;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class HitsTest {
+public class PeakTest {
 
 //-------------------------------------------------------------------
 
     @Test
-    public void test01HitsInstanceIsCreated () {
+    public void test01PeakInstanceCreated () {
 
-        Hits hits = new Hits();
-        Assert.assertNotNull(hits);
+
+        Peak peak = new Peak(new Wood(),new Durability(100),new Force(2),new WearDecreasesLinearly());
+        Assert.assertNotNull(peak);
     }
 
 //-------------------------------------------------------------------
 
-    @Test
-    public void test02HitsHasZeroAsDefaultValue () {
-
-        Hits hits = new Hits();
-        Assert.assertEquals(0,hits.getNumberOfHits());
-    }
-
 //-------------------------------------------------------------------
-
-    @Test
-    public void test03NumberOfHitsGetIncrementedWhenWeIncrement () {
-
-        Hits hits = new Hits();
-        hits.incrementHits();
-        Assert.assertEquals(1,hits.getNumberOfHits());
-    }
 
 //-------------------------------------------------------------------
 
