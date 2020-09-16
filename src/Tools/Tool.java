@@ -3,6 +3,7 @@ package Tools;
 import Materials.Materials;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
+import PropiedadesMateriales.Hits;
 import PropiedadesMateriales.Wear;
 
 
@@ -14,6 +15,8 @@ public abstract class Tool {
     Durability durability;
     Force force;
     Wear wear;                  // Desgaste
+    Hits hits;
+
 
 
 //-------------------------------------------------------------------
@@ -23,6 +26,7 @@ public abstract class Tool {
         this.durability = durability;
         this.force = force;
         this.wear = wear;
+        this.hits = new Hits();
     }
 
 //-------------------------------------------------------------------

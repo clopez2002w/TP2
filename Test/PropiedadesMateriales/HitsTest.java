@@ -1,34 +1,24 @@
-package Wear;
+package PropiedadesMateriales;
 
-import PropiedadesMateriales.Durability;
-import PropiedadesMateriales.Force;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class WearDecreasesLinearlyTest {
+public class HitsTest {
 
 //-------------------------------------------------------------------
 
     @Test
-    public void test01WearDecreasesLinearlyCreateInstance () {
+    public void test01HitsInstanceIsCreated () {
 
-        WearDecreasesLinearly wear = new WearDecreasesLinearly();
-        Assert.assertNotNull(wear);
+        Hits hits = new Hits();
+        Assert.assertNotNull(hits);
     }
 
 //-------------------------------------------------------------------
 
-    @Test
-    public void test02WearDecreasesLinearlyApplyReturnDurability98WhenDurabilityIs100AndForceIs2 () {
-
-        WearDecreasesLinearly wear = new WearDecreasesLinearly();
-        Force force = new Force(2);
-        Durability durability = new Durability(100);
-        wear.applyWear(durability,force);
-        Assert.assertEquals(98,durability.getDurability());
-    }
+//-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
 
