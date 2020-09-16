@@ -1,47 +1,26 @@
-package Factory;
+package Wear;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class FactoryTest {
+public class WearDecreasesDividedByFactorTest {
 
 //-------------------------------------------------------------------
 
     @Test
-    public void test01FactoryInstanceCreated () {
+    public void test01WearDecreasesDividedByFactorInstanceCreated () {
 
-        Factory factory = new Factory();
-        Assert.assertNotNull(factory);
+        WearDecreasesDividedByFactor wear = new WearDecreasesDividedByFactor(2);
+        Assert.assertNotNull(wear);
     }
 
 //-------------------------------------------------------------------
 
-    @Test
-    public void test02FactoryCreateAxeOfWood () {
-
-        Factory factory = new Factory();
-        Assert.assertNotNull(factory.makeAxeOfStone());
-    }
-
 //-------------------------------------------------------------------
 
-    @Test
-    public void test03FactoryCreateAxeOfStone () {
-
-        Factory factory = new Factory();
-        Assert.assertNotNull(factory.makeAxeOfStone());
-    }
-
 //-------------------------------------------------------------------
-
-    @Test
-    public void test04FactoryCreateAxeOfMetal () {
-
-        Factory factory = new Factory();
-        Assert.assertNotNull(factory.makeAxeOfMetal());
-    }
 
 //-------------------------------------------------------------------
 
