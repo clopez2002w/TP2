@@ -1,5 +1,7 @@
 package Wear;
 
+import PropiedadesMateriales.Durability;
+import PropiedadesMateriales.Force;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,6 +19,15 @@ public class WearDecreasesDividedByFactorTest {
     }
 
 //-------------------------------------------------------------------
+
+    @Test
+    public void test02WearDecreasesDividedByFactorReturnXWhenDurabilityIs400AndForceIs10 () {
+
+        WearDecreasesDividedByFactor wear = new WearDecreasesDividedByFactor(2);
+        Durability durability = new Durability(400);
+        Force force = new Force(10);
+        Assert.assertEquals(395,wear.applyWear(durability,force));
+    }
 
 //-------------------------------------------------------------------
 

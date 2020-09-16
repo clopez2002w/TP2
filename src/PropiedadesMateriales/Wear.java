@@ -7,6 +7,8 @@ public abstract class Wear {
 
 //-------------------------------------------------------------------
 
+    public abstract int applyWear (Durability durability, Force force);
+
 
 //-------------------------------------------------------------------
 

@@ -8,7 +8,10 @@ public class WearDecreasesLinearly extends Wear {
 
 //-------------------------------------------------------------------
 
-
+    @Override
+    public int applyWear(Durability durability, Force force) {
+        return 0;
+    }
 
 //-------------------------------------------------------------------
 
