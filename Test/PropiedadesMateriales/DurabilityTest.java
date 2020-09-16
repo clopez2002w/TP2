@@ -27,6 +27,14 @@ public class DurabilityTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test03AfterDurabilityWasCreatedNewValueIsSeted () {
+
+        Durability durability = new Durability(100);
+        durability.setDurability(95);
+        Assert.assertEquals(95,durability.getDurability());
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------

@@ -9,8 +9,9 @@ public class WearDecreasesLinearly extends Wear {
 //-------------------------------------------------------------------
 
     @Override
-    public int applyWear(Durability durability, Force force) {
-        return durability.getDurability()-force.getForce();
+    public void applyWear(Durability durability, Force force)
+    {
+        durability.setDurability(durability.getDurability()-force.getForce());
     }
 
 //-------------------------------------------------------------------

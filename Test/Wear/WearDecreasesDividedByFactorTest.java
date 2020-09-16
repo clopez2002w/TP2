@@ -26,7 +26,8 @@ public class WearDecreasesDividedByFactorTest {
         WearDecreasesDividedByFactor wear = new WearDecreasesDividedByFactor(2);
         Durability durability = new Durability(400);
         Force force = new Force(10);
-        Assert.assertEquals(395,wear.applyWear(durability,force));
+        wear.applyWear(durability,force);
+        Assert.assertEquals(395,durability.getDurability());
     }
 
 //-------------------------------------------------------------------

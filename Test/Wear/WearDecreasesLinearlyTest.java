@@ -26,7 +26,8 @@ public class WearDecreasesLinearlyTest {
         WearDecreasesLinearly wear = new WearDecreasesLinearly();
         Force force = new Force(2);
         Durability durability = new Durability(100);
-        Assert.assertEquals(98,wear.applyWear(durability,force));
+        wear.applyWear(durability,force);
+        Assert.assertEquals(98,durability.getDurability());
     }
 
 //-------------------------------------------------------------------

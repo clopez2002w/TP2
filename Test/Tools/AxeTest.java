@@ -55,6 +55,16 @@ public class AxeTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test05AxeOfWoodApplyWearSoDurabilityChangeFrom100To98 () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfWood();
+        axe.applyWear();
+        Assert.assertEquals(98,axe.giveMeDurability());
+
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------

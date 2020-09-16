@@ -10,16 +10,15 @@ public abstract class Tool {
 
     protected
 
-        Materials material;
-        Durability durability;
-        Force force;
-        Wear wear;                  // Desgaste
+    Materials material;
+    Durability durability;
+    Force force;
+    Wear wear;                  // Desgaste
 
 
 //-------------------------------------------------------------------
 
-    public Tool (Materials oneMaterial, Durability durability, Force force, Wear wear)
-    {
+    public Tool(Materials oneMaterial, Durability durability, Force force, Wear wear) {
         this.material = oneMaterial;
         this.durability = durability;
         this.force = force;
@@ -28,24 +27,29 @@ public abstract class Tool {
 
 //-------------------------------------------------------------------
 
-    public Materials giveMeMateirial ()
-    {
+    public Materials giveMeMateirial() {
         return this.material;
     }
 
 //-------------------------------------------------------------------
 
-    public int giveMeDurability ()
-    {
+    public int giveMeDurability() {
         return this.durability.getDurability();
     }
 
 //-------------------------------------------------------------------
 
-    public int giveMeForce ()
-    {
+    public int giveMeForce() {
         return this.force.getForce();
     }
+
+//-------------------------------------------------------------------
+
+    public void applyWear ()
+    {
+        this.wear.applyWear(durability,force);
+    }
+
 
 //-------------------------------------------------------------------
 
