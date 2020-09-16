@@ -67,6 +67,76 @@ public class AxeTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test06AxeOfStoneDurebilityIs200 () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfStone();
+        Assert.assertEquals(200,axe.giveMeDurability());
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test07AxeOfStoneForceIs5 () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfStone();
+        Assert.assertEquals(5,axe.giveMeForce());
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test08AxeOfStoneDurabilityChangeFrom200To195WhenWearIsApply () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfStone();
+        axe.applyWear();
+        Assert.assertEquals(195,axe.giveMeDurability());
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test09AxeOfMetalIsCreated () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfMetal();
+        Assert.assertNotNull(axe);
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test10AxeOfMetalDurabilityIs400 () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfMetal();
+        Assert.assertEquals(400,axe.giveMeDurability());
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test11AxeOfMetalForceIs10 () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfMetal();
+        Assert.assertEquals(10, axe.giveMeForce());
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test12AxeOfMetalDurabilityIs395AfterApplyWear () {
+
+        Factory factory = new Factory();
+        Axe axe = factory.makeAxeOfMetal();
+        axe.applyWear();
+        Assert.assertEquals(395, axe.giveMeDurability());
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
