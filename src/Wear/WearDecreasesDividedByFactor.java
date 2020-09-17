@@ -1,11 +1,14 @@
 package Wear;
 
+import Exceptions.NoMoreDurabilityException;
 import Factory.Factory;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
 import PropiedadesMateriales.Wear;
 
 public class WearDecreasesDividedByFactor extends Wear {
+
+    private static final int NOMORDURABILITY = 0;
 
     private
 
@@ -25,12 +28,6 @@ public class WearDecreasesDividedByFactor extends Wear {
     {
         durability.setDurability(durability.getDurability()-force.getForce()/factor);
     }
-
-
-
-
-
-
 
 //-------------------------------------------------------------------
 
