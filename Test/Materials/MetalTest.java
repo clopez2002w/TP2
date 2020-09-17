@@ -18,6 +18,13 @@ public class MetalTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test02GetMetalDurability () {
+
+        Metal metal = new Metal();
+        Assert.assertEquals(50, metal.getDurability());
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------

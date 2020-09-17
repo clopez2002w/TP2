@@ -18,6 +18,13 @@ public class DiamondTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void teest02GetDiamondDurability () {
+
+        Diamond diamond = new Diamond();
+        Assert.assertEquals(100, diamond.getDurability());
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------

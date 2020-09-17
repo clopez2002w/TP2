@@ -18,6 +18,13 @@ public class StoneTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test02GetStoneDurability () {
+
+        Stone stone = new Stone();
+        Assert.assertEquals(30, stone.getDurability());
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
