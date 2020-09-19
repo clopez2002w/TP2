@@ -1,5 +1,6 @@
 package Tools;
 
+import Exceptions.NoMoreDurabilityException;
 import Factory.Factory;
 import Materials.Wood;
 import PropiedadesMateriales.Durability;
@@ -56,7 +57,7 @@ public class PeakTest {
 //-------------------------------------------------------------------
 
     @Test
-    public void test05PeakOfWoodApplyWearSoDurabilityChangeFrom100To98 () {
+    public void test05PeakOfWoodApplyWearSoDurabilityChangeFrom100To98 () throws NoMoreDurabilityException{
 
         Factory factory = new Factory();
         Peak peak = factory.makePeakOfWood();

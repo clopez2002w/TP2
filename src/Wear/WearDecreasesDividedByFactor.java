@@ -24,7 +24,7 @@ public class WearDecreasesDividedByFactor extends Wear {
 //-------------------------------------------------------------------
 
     @Override
-    public void applyWear(Durability durability, Force force)
+    public void applyWear(Durability durability, Force force) throws NoMoreDurabilityException
     {
         durability.setDurability(durability.getDurability()-force.getForce()/factor);
     }

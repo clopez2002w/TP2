@@ -1,5 +1,7 @@
 package PropiedadesMateriales;
 
+import Exceptions.NoMoreDurabilityException;
+
 public abstract class Wear {
 
 
@@ -7,7 +9,7 @@ public abstract class Wear {
 
 //-------------------------------------------------------------------
 
-    public abstract void applyWear (Durability durability, Force force);
+    public abstract void applyWear (Durability durability, Force force) throws NoMoreDurabilityException;
 
 
 //-------------------------------------------------------------------

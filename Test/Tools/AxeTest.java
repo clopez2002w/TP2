@@ -1,5 +1,6 @@
 package Tools;
 
+import Exceptions.NoMoreDurabilityException;
 import Factory.Factory;
 import Materials.Materials;
 import Materials.Wood;
@@ -56,7 +57,7 @@ public class AxeTest {
 //-------------------------------------------------------------------
 
     @Test
-    public void test05AxeOfWoodApplyWearSoDurabilityChangeFrom100To98 () {
+    public void test05AxeOfWoodApplyWearSoDurabilityChangeFrom100To98 () throws NoMoreDurabilityException {
 
         Factory factory = new Factory();
         Axe axe = factory.makeAxeOfWood();
@@ -88,7 +89,7 @@ public class AxeTest {
 //-------------------------------------------------------------------
 
     @Test
-    public void test08AxeOfStoneDurabilityChangeFrom200To195WhenWearIsApply () {
+    public void test08AxeOfStoneDurabilityChangeFrom200To195WhenWearIsApply () throws NoMoreDurabilityException {
 
         Factory factory = new Factory();
         Axe axe = factory.makeAxeOfStone();
@@ -129,7 +130,7 @@ public class AxeTest {
 //-------------------------------------------------------------------
 
     @Test
-    public void test12AxeOfMetalDurabilityIs395AfterApplyWear () {
+    public void test12AxeOfMetalDurabilityIs395AfterApplyWear () throws NoMoreDurabilityException{
 
         Factory factory = new Factory();
         Axe axe = factory.makeAxeOfMetal();
