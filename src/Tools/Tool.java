@@ -1,5 +1,6 @@
 package Tools;
 
+import Exceptions.NoMoreDurabilityException;
 import Materials.Materials;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
@@ -49,8 +50,10 @@ public abstract class Tool {
 
 //-------------------------------------------------------------------
 
-    public void applyWear ()
+    public void applyWear () throws NoMoreDurabilityException
     {
+        if (durability.getDurability() == 0)
+            throw new NoMoreDurabilityException();
         this.wear.applyWear(durability,force);
     }
 

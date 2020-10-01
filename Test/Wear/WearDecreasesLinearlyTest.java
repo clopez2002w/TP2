@@ -1,5 +1,6 @@
 package Wear;
 
+import Exceptions.NoMoreDurabilityException;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
 import org.junit.Assert;
@@ -21,7 +22,7 @@ public class WearDecreasesLinearlyTest {
 //-------------------------------------------------------------------
 
     @Test
-    public void test02WearDecreasesLinearlyApplyReturnDurability98WhenDurabilityIs100AndForceIs2 () {
+    public void test02WearDecreasesLinearlyApplyReturnDurability98WhenDurabilityIs100AndForceIs2 () throws NoMoreDurabilityException {
 
         WearDecreasesLinearly wear = new WearDecreasesLinearly();
         Force force = new Force(2);

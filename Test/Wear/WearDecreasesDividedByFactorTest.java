@@ -1,5 +1,6 @@
 package Wear;
 
+import Exceptions.NoMoreDurabilityException;
 import PropiedadesMateriales.Durability;
 import PropiedadesMateriales.Force;
 import org.junit.Assert;
@@ -21,7 +22,7 @@ public class WearDecreasesDividedByFactorTest {
 //-------------------------------------------------------------------
 
     @Test
-    public void test02WearDecreasesDividedByFactorReturnXWhenDurabilityIs400AndForceIs10 () {
+    public void test02WearDecreasesDividedByFactorReturnXWhenDurabilityIs400AndForceIs10 () throws NoMoreDurabilityException{
 
         WearDecreasesDividedByFactor wear = new WearDecreasesDividedByFactor(2);
         Durability durability = new Durability(400);
