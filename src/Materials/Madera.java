@@ -1,29 +1,26 @@
-package Attributes;
+package Materials;
 
-public class Durability {
+import Attributes.Durability;
 
-    private
+public class Madera extends Material{
 
-        int durability;
+    static final int WOODDURABILITY = 10;
+
 
 //-------------------------------------------------------------------
 
-    public Durability (int durability)
+    public Madera ()
     {
-        this.durability = durability;
+        this.durability = new Durability(WOODDURABILITY);
     }
 
 //-------------------------------------------------------------------
 
-    public int getDurability ()
-    {
-        return this.durability;
-    }
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
 
-//-------------------------------------------------------------------
+
 }

@@ -1,29 +1,28 @@
-package Attributes;
+package Materials;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class DurabilityTest {
+public class MaderaTest {
 
 //-------------------------------------------------------------------
 
     @Test
-    public void test01DurebilityInstanceCreated () {
+    public void test01InstanceOfMaderaIsCreated () {
 
-        Durability durability = new Durability(10);
-        Assert.assertNotNull(durability);
+        Madera madera = new Madera();
+        Assert.assertNotNull(madera);
     }
 
 //-------------------------------------------------------------------
 
     @Test
-    public void test02getDurability () {
+    public void test02TestMaderaDurability () {
 
-        Durability durability = new Durability(10);
-        Assert.assertEquals(10,durability.getDurability());
-
+        Madera madera = new Madera();
+        Assert.assertEquals(10,madera.getDurability());
     }
 
 //-------------------------------------------------------------------
@@ -32,6 +31,5 @@ public class DurabilityTest {
 
 //-------------------------------------------------------------------
 
-//-------------------------------------------------------------------
 
 }
