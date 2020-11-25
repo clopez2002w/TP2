@@ -2,14 +2,14 @@ package Materials;
 
 import Attributes.Durability;
 
-public class Madera extends Material{
+public class Wood extends Material{
 
     static final int WOODDURABILITY = 10;
 
 
 //-------------------------------------------------------------------
 
-    public Madera ()
+    public Wood()
     {
         this.durability = new Durability(WOODDURABILITY);
     }

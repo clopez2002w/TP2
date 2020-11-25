@@ -3,8 +3,6 @@ package Materials;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class MaderaTest {
 
 //-------------------------------------------------------------------
@@ -12,7 +10,7 @@ public class MaderaTest {
     @Test
     public void test01InstanceOfMaderaIsCreated () {
 
-        Madera madera = new Madera();
+        Wood madera = new Wood();
         Assert.assertNotNull(madera);
     }
 
@@ -21,7 +19,7 @@ public class MaderaTest {
     @Test
     public void test02TestMaderaDurability () {
 
-        Madera madera = new Madera();
+        Wood madera = new Wood();
         Assert.assertEquals(10,madera.getDurability());
     }
 
