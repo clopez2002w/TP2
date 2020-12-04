@@ -1,24 +1,22 @@
-package Tools;
+package Tools.Axe;
 
 import Attributes.Durability;
 import Attributes.Strength;
-import Materials.Material;
+import Materials.Wood;
+import org.junit.Assert;
+import org.junit.Test;
 
-public abstract class Tool {
+import static org.junit.Assert.*;
 
-    protected
-
-        Material material;
-        Durability durability;
-        Strength strength;
+public class AxeTest {
 
 //-------------------------------------------------------------------
 
-    public Tool (Material material, Durability durability, Strength strength)
-    {
-        this.material = material;
-        this.durability = durability;
-        this.strength = strength;
+    @Test
+    public void test01AxeTestInstanceCreated () {
+
+        Axe axe = new Axe(new Wood(),new Durability(100),new Strength(2));
+        Assert.assertNotNull(axe);
     }
 
 //-------------------------------------------------------------------
@@ -34,6 +32,5 @@ public abstract class Tool {
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
-
 
 }
