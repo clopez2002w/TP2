@@ -2,6 +2,7 @@ package Tools.Axe;
 
 import Attributes.Durability;
 import Attributes.Strength;
+import Materials.Stone;
 import Materials.Wood;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,6 +21,13 @@ public class AxeTest {
     }
 
 //-------------------------------------------------------------------
+
+    @Test
+    public void test02StoneAxeIsCreated () {
+
+        Axe axe = new Axe(new Stone(), new Durability(200),new Strength(5));
+        Assert.assertNotNull(axe);
+    }
 
 //-------------------------------------------------------------------
 
