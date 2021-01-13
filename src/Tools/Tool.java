@@ -2,7 +2,6 @@ package Tools;
 
 import Attributes.Durability;
 import Attributes.Strength;
-import Attributes.Wear;
 import Materials.Material;
 
 public abstract class Tool {
@@ -12,7 +11,15 @@ public abstract class Tool {
         Material material;
         Durability durability;
         Strength strength;
-        Wear wear;
+
+//-------------------------------------------------------------------
+
+    public Tool (Material material, Durability durability, Strength strength)
+    {
+        this.material = material;
+        this.durability = durability;
+        this.strength = strength;
+    }
 
 //-------------------------------------------------------------------
 
@@ -28,5 +35,5 @@ public abstract class Tool {
 
 //-------------------------------------------------------------------
 
-//-------------------------------------------------------------------
+
 }
