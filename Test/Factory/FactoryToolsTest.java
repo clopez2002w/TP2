@@ -1,6 +1,7 @@
 package Factory;
 
 import Tools.Axe.Axe;
+import Tools.Axe.Peak;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -42,9 +43,33 @@ public class FactoryToolsTest {
 
 //-------------------------------------------------------------------
 
-//-------------------------------------------------------------------
+    @Test
+    public void test04WoodPeakCreated () {
+
+        FactoryTools factoryTools = new FactoryTools();
+        Peak peak = factoryTools.builWoodenPeak();
+        Assert.assertNotNull(peak);
+    }
 
 //-------------------------------------------------------------------
+
+    @Test
+    public void test05StonePeakCreated () {
+
+        FactoryTools factoryTools = new FactoryTools();
+        Peak peak = factoryTools.builStonePeak();
+        Assert.assertNotNull(peak);
+    }
+
+//-------------------------------------------------------------------
+
+    @Test
+    public void test06MetalPeakCreated () {
+
+        FactoryTools factoryTools = new FactoryTools();
+        Peak peak = factoryTools.builMetalPeak();
+        Assert.assertNotNull(peak);
+    }
 
 //-------------------------------------------------------------------
 
