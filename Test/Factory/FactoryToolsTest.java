@@ -73,6 +73,14 @@ public class FactoryToolsTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test07FinePeakInstanceIsCreated () {
+
+        FactoryTools factoryTools = new FactoryTools();
+        Peak peak = factoryTools.buidFinePeak();
+        Assert.assertNotNull(peak);
+    }
+
 //-------------------------------------------------------------------
 
 }

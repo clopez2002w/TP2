@@ -7,6 +7,10 @@ import Tools.Tool;
 
 public class Peak extends Tool {
 
+    private
+
+        Material material2;
+
 //-------------------------------------------------------------------
 
     public Peak(Material material, Durability durability, Strength strength)
@@ -15,4 +19,18 @@ public class Peak extends Tool {
     }
 
 //-------------------------------------------------------------------
+
+    public void setSecondMaterial (Material oneMaterial)
+    {
+        this.material2 = oneMaterial;
+    }
+
+//-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+
 }

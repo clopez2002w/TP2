@@ -27,6 +27,9 @@ public class FactoryTools {
     private static final int STONE_PEAK_STRENGTH = 4;
     private static final int METAL_PEAK_STRENGTH = 12;
 
+    private static final int FINE_PEAK_DURABILITY = 1000;
+    private static final int FINE_PEAK_STRENGTH = 20;
+
 
 
 //-------------------------------------------------------------------
@@ -72,6 +75,13 @@ public class FactoryTools {
     }
 
 //-------------------------------------------------------------------
+
+    public Peak buidFinePeak ()
+    {
+        Peak peak = new Peak(new Metal(), new Durability(FINE_PEAK_DURABILITY), new Strength(FINE_PEAK_STRENGTH));
+        peak.setSecondMaterial (new Stone());
+        return peak;
+    }
 
 //-------------------------------------------------------------------
 
